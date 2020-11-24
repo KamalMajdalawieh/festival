@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Tajawal-Bold";
+    src: url("../fonts/Tajawal-Bold.ttf");
+}
+@font-face {
+    font-family: "Tajawal-Light";
+    src: url("../fonts/Tajawal-Light.ttf");
+}
+@font-face {
+    font-family: "Tajawal-Medium";
+    src: url("../fonts/Tajawal-Medium.ttf");
+}
+@font-face {
+    font-family: "Tajawal-Regular";
+    src: url("../fonts/Tajawal-Regular.ttf");
+}
+body{
+    direction: rtl;
+}
+.bg_section{
+    position: relative;
+    background-image: url("../images/المركز-الثقافي-العربي.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top: 1%;
+    left: 80%;
+}
+.section_title{
+    font-family: Tajawal-Regular;
+    position: absolute;
+    bottom: 24%;
+}
+.image_section_text{
+    font-family: Tajawal-Light;
+    color: white;
+    z-index: 9999;
+}
+.section_subtitle{
+    position: absolute;
+    bottom: 20%;
+}
+.date_title{
+    position: absolute;
+    bottom: 14%;
+    font-size: 17px;
+}
+.icon{
+    width: 20px;
+}
+.place_title{
+    position: absolute;
+    bottom: 9%;
+    font-size: 17px;
+}
+.gradient_div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(#00000000, #00A0DF);
+    opacity: 1;
+}
+.menu_page{
+    border-radius: 0px 0px 70px 0px;;
+    background: #00A0DF;
+}
+li{
+    font-family: Tajawal-Medium;
+    font-size: 18px;
+}
+.link{
+    color: white;!important;
+}
+.link:hover{
+    color: white;
+}
+.timer_title{
+    font-family: Tajawal-Regular;
+    color: #40b8e7;
+}
+.bg_div{
+    border-radius: 70px 0px 70px 0px;;
+    background: #00A0DF;
+}
+.div_title{
+    font-family: Tajawal-Medium;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: white;
+}
+.head_title{
+    font-family: Tajawal-Regular;
+    color: #00A0DF;
+}
+.box_image{
+    position: relative;
+    border-radius: 10px!important;
+}
+.gradient_box_image{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#21345800, #213458);
+}
+.text_box{
+    position: absolute;
+    top: 69%;
+    right: 18%;
+}
+.paragraph_box{
+    font-family: Tajawal-Medium;
+    font-size: 27px;
+    color: white;
+}
+.text_box_div{
+    position: absolute;
+    top: 69%;
+    right: 25%;
+}
+.text_box_lecture{
+    position: absolute;
+    top: 69%;
+    right: 14%;
+}
+.text_box_work{
+    position: absolute;
+    top: 69%;
+    right: 25%;
+}
+.schedule_box{
+    border-radius: 0px 0px 20px 20px;
+}
