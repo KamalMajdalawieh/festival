@@ -82,7 +82,7 @@ li{
 }
 .timer_title{
     font-family: Tajawal-Regular;
-    color: #40b8e7;
+    color: #00A0DF;
 }
 .bg_div{
     border-radius: 70px 0px 70px 0px;;
@@ -137,4 +137,126 @@ li{
 }
 .schedule_box{
     border-radius: 0px 0px 20px 20px;
+    width: 90px;
+    height: 80px;
+}
+.clock_icon{
+    width: 25px;
+}
+.clock_text{
+    font-family: Tajawal-Regular;
+    font-size: 21px;
+    color: #7C7C7C;
+}
+.title_text{
+    font-family: Tajawal-Regular;
+    font-size: 21px;
+    color: #00A0DF;
+}
+.person_div{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.person_icon {
+    opacity: 0.5;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.person_text{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hover_circle:hover .person_icon {
+    opacity: 1;
+}
+.hover_circle:hover .person_text {
+    opacity: 1;
+}
+.person_name {
+    color: #00A0DF;
+    font-size: 13px;
+    width: 80px;
+}
+.festival_title{
+    font-family: Tajawal-Regular;
+    color: #00A0DF;
+}
+.company_div{
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.company_icon {
+    opacity: 0.5;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.company_text{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hover_square:hover .company_icon {
+    opacity: 1;
+}
+.hover_square:hover .company_text {
+    opacity: 1;
+}
+.company_name {
+    color: #00A0DF;
+    font-size: 15px;
+    width: 110px;
+}
+.festival_text{
+    font-family: Tajawal-Medium;
+    font-size: 20px;
+    color: #00A0DF;
+    line-height: 2;
+}
+.page_footer{
+    border-radius: 70px 0px 0px 0px;;
+    background: #00A0DF;
+}
+.footer_logo {
+    filter: brightness(0) invert(1);
+}
+.location_icon{
+    width: 14px;
+}
+.location_text{
+    font-family: Tajawal-Light;
+    color: white;
+}
+.footer_text{
+    font-family: Tajawal-Medium;
+    color: white;
+}
+.map_location{
+    border-radius: 8px;!important;
+    width: 400px;
+    height: 200px;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
 }
