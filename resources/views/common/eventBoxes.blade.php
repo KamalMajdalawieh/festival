@@ -1,4 +1,4 @@
-<div class="col-md-2">
+<div class="col-md-2 mt-4 mt-md-0">
     <a href="">
     <div class="box_image">
         <img src="{{asset('images/'.$image)}}"

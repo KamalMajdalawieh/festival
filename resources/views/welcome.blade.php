@@ -31,6 +31,7 @@
                 <div class="gradient_div">
                 </div>
             </div>
+
         </div>
     </div>
       @include('layouts.menu')
@@ -42,9 +43,18 @@
                 <h4 class="timer_title">باقي على انطلاق المهرجان</h4>
             </div>
         </div>
+
+            <div class="row">
+                <div class="col-12 timer_div" id="demo">
+                    <div class="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="mt-5">
+    <section class="mt-5" id="program">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -144,7 +154,7 @@
         </div>
     </section>
 
-    <section class="mt-5">
+    <section class="mt-5" id="timetable">
         <div class="container">
             <div class="row">
         <div class="col-12 text-center">
@@ -152,12 +162,11 @@
                 <p class="div_title">الجدول الزمني </p>
             </div>
         </div>
-            </div>
-            <div class="row justify-content-center">
-                <ul class=" col-8 nav nav-pills">
+                <div class="col-12">
+                <ul class=" nav nav-pills">
                     <li class="active text-center">
                         <a data-toggle="pill"
-                           class="target-tabs-cards"
+                           class=" tab target-tabs-cards"
                            href="#menu1">
                             <div class="card schedule_box">
                                 <div class="card-title pt-3">
@@ -169,7 +178,7 @@
                     </li>
                     <li class="text-center">
                         <a data-toggle="pill"
-                           class=" target-tabs-cards"
+                           class=" tab target-tabs-cards"
                            href="#menu2">
                             <div class="card schedule_box">
                                 <div class="card-title pt-3">
@@ -181,7 +190,7 @@
                     </li>
                     <li class="text-center">
                         <a data-toggle="pill"
-                           class="target-tabs-cards"
+                           class="tab target-tabs-cards"
                            href="#menu3">
                             <div class="card schedule_box">
                                 <div class="card-title pt-3">
@@ -193,7 +202,7 @@
                     </li>
                     <li class="text-center">
                         <a data-toggle="pill"
-                           class= target-tabs-cards"
+                           class= "tab target-tabs-cards"
                            href="#menu4">
                             <div class="card schedule_box">
                                 <div class="card-title pt-3">
@@ -205,7 +214,7 @@
                     </li>
                     <li class="text-center">
                         <a data-toggle="pill"
-                           class=" target-tabs-cards"
+                           class=" tab target-tabs-cards"
                            href="#menu5">
                             <div class="card schedule_box">
                                 <div class="card-title pt-3">
@@ -217,7 +226,7 @@
                     </li>
                     <li class="text-center">
                         <a data-toggle="pill"
-                           class=" target-tabs-cards"
+                           class=" tab target-tabs-cards"
                            href="#menu6">
                             <div class="card schedule_box">
                                 <div class="card-title pt-3">
@@ -229,7 +238,7 @@
                     </li>
                     <li class="text-center">
                         <a data-toggle="pill"
-                           class="target-tabs-cards"
+                           class=" tab target-tabs-cards"
                            href="#menu7">
                             <div class="card schedule_box">
                                 <div class="card-title pt-3">
@@ -240,34 +249,34 @@
                         </a>
                     </li>
                 </ul>
+                </div>
                 <div class="col-12">
                     <div class="tab-content">
                         <div id="menu1" class="tab-pane">
                             <div class="row mt-5">
-                                <div class="col-12 text-md-right">
-                                    <h4 class="timer_title">الخميس 17 ديسمبر 2020</h4>
+                                <div class="col-le">الخميس 17 ديسمبر 2020</h4>
                                 </div>
                             </div>
-                                <div class="row text-md-right mt-3">
-                                 @component('common.tabBoxes')
-                                     @slot('text') 9:00 - 9:30 صباحا @endslot
-                                    @endcomponent
-                                </div>
-                                <div class="row text-md-right mt-5">
-                                    @component('common.tabBoxes')
-                                        @slot('text') 9:30 - 10:00 صباحا @endslot
-                                    @endcomponent
-                                </div>
-                                <div class="row text-md-right mt-5">
-                                    @component('common.tabBoxes')
-                                        @slot('text') 10:30 - 10:45 صباحا @endslot
-                                    @endcomponent
-                                    </div>
-                                <div class="row text-md-right mt-5">
-                                    @component('common.tabBoxes')
-                                        @slot('text') 10:45 - 11:15 صباحا @endslot
-                                    @endcomponent
-                                </div>
+                            <div class="row text-md-right mt-3">
+                                @component('common.tabBoxes')
+                                    @slot('text') 9:00 - 9:30 صباحا @endslot
+                                @endcomponent
+                            </div>
+                            <div class="row text-md-right mt-5">
+                                @component('common.tabBoxes')
+                                    @slot('text') 9:30 - 10:00 صباحا @endslot
+                                @endcomponent
+                            </div>
+                            <div class="row text-md-right mt-5">
+                                @component('common.tabBoxes')
+                                    @slot('text') 10:30 - 10:45 صباحا @endslot
+                                @endcomponent
+                            </div>
+                            <div class="row text-md-right mt-5">
+                                @component('common.tabBoxes')
+                                    @slot('text') 10:45 - 11:15 صباحا @endslot
+                                @endcomponent
+                            </div>
                         </div>
                         <div id="menu2" class="tab-pane">
                             <div class="row mt-5">
@@ -431,13 +440,14 @@
                                 @endcomponent
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
+
             </div>
+                </div>
     </section>
 
-    <section class="mt-5">
+    <section class="mt-5" id="participants">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -595,7 +605,7 @@
         </div>
     </section>
 
-    <section class="mt-5">
+    <section class="mt-5" id="partners">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -637,7 +647,7 @@
                     @endcomponent
             </div>
             <div class="row mt-5 justify-content-center">
-                <h3 class="festival_title">تعاون في ملف الساحل الفلسطيني</h3>
+                <h3 class="festival_title title_size">تعاون في ملف الساحل الفلسطيني</h3>
             </div>
             <div class="row mt-4 justify-content-center">
                 @component('common.companyIcons')
@@ -671,7 +681,7 @@
                 @endcomponent
             </div>
             <div class="row mt-5 justify-content-center">
-                <h3 class="festival_title">الحركات الشبابيّة المشاركة</h3>
+                <h3 class="festival_title festival_mobile_title">الحركات الشبابيّة المشاركة</h3>
             </div>
             <div class="row mt-4 justify-content-center">
                 @component('common.companyIcons')
@@ -775,7 +785,7 @@
         </div>
     </section>
 
-<section class="mt-5">
+<section class="mt-5" id="about_festival">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -785,8 +795,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-md-right">
-                <p class="festival_text">
+            <div class="col-12 text-md-right text-center">
+                <p class="festival_text ">
                     اختارت الجمعيّة ثيمة السّاحل الفلسطيني كثيمة مركزيّة للمهرجان الّذي سيستمرّ لسبعة أيّام ممثّلةً بثلاث مدنٍ من مدن السّاحل الفلسطينيّ، هي عكّا، وحيفا، ويافا؛ إذ تواجه هذه المدن، منذ النكبة، مخطّطاتٍ مُمَنهجةً تهدِفُ إلى طمس معالمها الفلسطينيّة وتزوير هويتها وتاريخها وثقافتها وتستهدف سُكّانها الفلسطينيّين الأصلانيّين، إلى جانب سياسات التهويد والإفقار التي يعاني منها سكان الأحياء الفلسطينيّة المهمّشة مثل حي وادي النسناس في حيفا، حي العجمي في يافا، والسوق الشعبي في عكّا، الّتي تُظهر الاستغلال والتّسفيه الواضح للموروثِ والمخزونِ الثّقافيِّ الفلسطينيّ؛ بتحويل هذه الأحياء إلى حيّز سياحيٍّ منزوعِ السّياقِ السّياسيِّ والتّاريخيِّ والتّرويجِ المًكثّفِ للأسرَلةِ والتطبيع مع تجاهل تامٍّ لتاريخ المدن وتُراثها
                 </p>
                 <p class="festival_text mt-5">

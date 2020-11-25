@@ -1,6 +1,6 @@
 <div class="row justify-content-center menu_page">
     <div class="col-12">
-        <nav class="navbar navbar-expand-md pt-4 pb-4 text-center">
+        <nav class="navbar navbar-expand-md main_menu pt-4 pb-4 text-center">
             <a href="">
                 <img src="{{asset('images/ACA-logo.png')}}"
                      class="menu_logo mr-5">
@@ -12,24 +12,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item mr-5">
-                        <a class="nav-link link" href=""> البرنامج </a>
+                        <a class="nav-link link scroll_to_div" href="#program"> البرنامج </a>
                     </li>
 
                     <li class="nav-item mr-5">
-                        <a class="nav-link link" href="">المشاركون</a>
+                        <a class="nav-link link scroll_to_div" href="#participants">المشاركون</a>
                     </li>
                     <li class="nav-item mr-5 link">
-                        <a class="nav-link link" href="">الجدول الزمني</a>
+                        <a class="nav-link link scroll_to_div" href="#timetable">الجدول الزمني</a>
                     </li>
 
                     <li class="nav-item mr-5">
-                        <a class="nav-link link" href="" >الشركاء</a>
+                        <a class="nav-link link" href="#partners">الشركاء</a>
                     </li>
                     <li class="nav-item mr-5">
-                        <a class="nav-link link" href="#">حول المهرجان</a>
+                        <a class="nav-link link scroll_to_div" href="#about_festival">حول المهرجان</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 </div>
+
