@@ -19,7 +19,7 @@ body{
 }
 .bg_section{
     position: relative;
-    background-image: url("../images/المركز-الثقافي-العربي.png");
+    background-image: url("../images/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;

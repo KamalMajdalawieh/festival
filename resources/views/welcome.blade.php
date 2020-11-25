@@ -3,7 +3,7 @@
 <section>
     <div class="bg_section">
         <div class="container">
-            <div class="row">
+       {{--     <div class="row">
                 <div class=" col-12 mt-5 logo">
                     <a href="">
                         <img src="{{asset('images/ACA-logo.png')}}"
@@ -30,7 +30,7 @@
                 </div>
                 <div class="gradient_div">
                 </div>
-            </div>
+            </div>--}}
 
         </div>
     </div>
@@ -71,6 +71,7 @@
             </div>
             <div class="row mt-3">
                 @component('common.eventBoxes')
+             {{--       @slot('href') lecture @endslot--}}
                     @slot('image') music.png @endslot
                     @slot('text')  موسيقى @endslot
                     @slot('class_title') text_box @endslot

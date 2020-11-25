@@ -8,15 +8,15 @@ class EventController extends Controller
 {
     //
     public function music(){
-        return view('music');
+        return view('event.music');
     }
 
     public function stage(){
-        return view('stage');
+        return view('event.stage');
     }
 
     public function cinema(){
-        return view('cinema');
+        return view('event.cinema');
     }
 
     public function shows(){
@@ -28,6 +28,6 @@ class EventController extends Controller
     }
 
     public function workshop(){
-        return view('workshop');
+        return view('event.workshop');
     }
 }
