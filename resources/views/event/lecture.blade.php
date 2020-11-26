@@ -1,50 +1,65 @@
-@component('common.titleBackground')
-    @slot('title') محاضرات @endslot
-@endcomponent
-<section class="mt-5">
+@extends('layouts.app')
+@section('content')
+    <section>
+    @component('common.titleBackground')
+        @slot('title') محاضرات @endslot
+    @endcomponent
+    </section>
+
+<section class="mt-5 mb-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <a href="">
-                    <div class="square_image">
-                        <img src="{{asset('images/lecture1.png')}}"
-                             class="w-100">
-                        <div class="gradient_square_image">
-                        </div>
-                        <div class="">
-                            <p class="paragraph_square">محاضرة 1 </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            @component('common.lectureBoxes')
+                @slot('image') lecture1.png @endslot
+                @slot('text')  محاضرة 1 @endslot
+            @endcomponent
 
-            <div class="col-md-4">
-                <a href="">
-                    <div class="square_image">
-                        <img src="{{asset('images/lecture2.png')}}"
-                             class="w-100">
-                        <div class="gradient_square_image">
-                        </div>
-                        <div class="">
-                            <p class="paragraph_square">محاضرة 2 </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                @component('common.lectureBoxes')
+                    @slot('image') lecture2.png @endslot
+                    @slot('text')  محاضرة 2 @endslot
+                @endcomponent
 
-            <div class="col-md-4">
-                <a href="">
-                    <div class="square_image">
-                        <img src="{{asset('images/lecture3.png')}}"
-                             class="w-100">
-                        <div class="gradient_square_image">
-                        </div>
-                        <div class="">
-                            <p class="paragraph_square">محاضرة 3 </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                @component('common.lectureBoxes')
+                    @slot('image') lecture3.png @endslot
+                    @slot('text')  محاضرة 3 @endslot
+                @endcomponent
+
+    </div>
+        <div class="row mt-5">
+            @component('common.lectureBoxes')
+                @slot('image') lecture1.png @endslot
+                @slot('text')  محاضرة 4 @endslot
+            @endcomponent
+
+            @component('common.lectureBoxes')
+                @slot('image') lecture2.png @endslot
+                @slot('text')  محاضرة 5 @endslot
+            @endcomponent
+
+            @component('common.lectureBoxes')
+                @slot('image') lecture3.png @endslot
+                @slot('text')  محاضرة 6 @endslot
+            @endcomponent
+
+        </div>
+        <div class="row mt-5">
+            @component('common.lectureBoxes')
+                @slot('image') lecture1.png @endslot
+                @slot('text')  محاضرة 7 @endslot
+            @endcomponent
+
+            @component('common.lectureBoxes')
+                @slot('image') lecture2.png @endslot
+                @slot('text')  محاضرة 8 @endslot
+            @endcomponent
+
+            @component('common.lectureBoxes')
+                @slot('image') lecture3.png @endslot
+                @slot('text')  محاضرة 9 @endslot
+            @endcomponent
+
         </div>
     </div>
 </section>
+@endsection
+

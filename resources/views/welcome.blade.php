@@ -40,7 +40,8 @@
     <section class="mt-5">
         <div class="container">
             <div class="row">
-                <h4 class="timer_title">باقي على انطلاق المهرجان</h4>
+                <div class="col-12">
+                <h4 class="timer_title text-md-right">باقي على انطلاق المهرجان</h4>
             </div>
         </div>
 
@@ -71,7 +72,7 @@
             </div>
             <div class="row mt-3">
                 @component('common.eventBoxes')
-             {{--       @slot('href') lecture @endslot--}}
+                    @slot('href') lecture @endslot
                     @slot('image') music.png @endslot
                     @slot('text')  موسيقى @endslot
                     @slot('class_title') text_box @endslot
@@ -79,6 +80,7 @@
                 @endcomponent
 
                     @component('common.eventBoxes')
+                        @slot('href') lecture @endslot
                         @slot('image') stage.png @endslot
                         @slot('text')  مسرح @endslot
                             @slot('class_title') text_box_div @endslot
@@ -86,24 +88,28 @@
                     @endcomponent
 
                     @component('common.eventBoxes')
+                        @slot('href') cinema @endslot
                         @slot('image') cinema.png @endslot
                         @slot('text')  سينما @endslot
                             @slot('class_title') text_box_div @endslot
                     @endcomponent
 
                     @component('common.eventBoxes')
+                        @slot('href') lecture @endslot
                         @slot('image') show.png @endslot
                         @slot('text')  عروض @endslot
                             @slot('class_title') text_box_div @endslot
                     @endcomponent
 
                     @component('common.eventBoxes')
+                        @slot('href') lecture @endslot
                         @slot('image') lecture.png @endslot
                         @slot('text')  محاضرات @endslot
                             @slot('class_title') text_box_lecture @endslot
                     @endcomponent
 
                     @component('common.eventBoxes')
+                        @slot('href') article @endslot
                         @slot('image') workshop.png @endslot
                         @slot('text')  ورشات @endslot
                             @slot('class_title') text_box_work @endslot
@@ -113,6 +119,7 @@
             </div>
             <div class="row mt-4">
                 @component('common.eventBoxes')
+                 @slot('href') lecture @endslot
                     @slot('image') music.png @endslot
                     @slot('text')  موسيقى @endslot
                     @slot('class_title') text_box @endslot
@@ -120,6 +127,7 @@
                 @endcomponent
 
                 @component('common.eventBoxes')
+                 @slot('href') lecture @endslot
                     @slot('image') stage.png @endslot
                     @slot('text')  مسرح @endslot
                     @slot('class_title') text_box_div @endslot
@@ -127,24 +135,28 @@
                 @endcomponent
 
                 @component('common.eventBoxes')
+                 @slot('href') cinema @endslot
                     @slot('image') cinema.png @endslot
                     @slot('text')  سينما @endslot
                     @slot('class_title') text_box_div @endslot
                 @endcomponent
 
                 @component('common.eventBoxes')
+                 @slot('href') lecture @endslot
                     @slot('image') show.png @endslot
                     @slot('text')  عروض @endslot
                     @slot('class_title') text_box_div @endslot
                 @endcomponent
 
                 @component('common.eventBoxes')
+                 @slot('href') lecture @endslot
                     @slot('image') lecture.png @endslot
                     @slot('text')  محاضرات @endslot
                     @slot('class_title') text_box_lecture @endslot
                 @endcomponent
 
                 @component('common.eventBoxes')
+                 @slot('href') article @endslot
                     @slot('image') workshop.png @endslot
                     @slot('text')  ورشات @endslot
                     @slot('class_title') text_box_work @endslot

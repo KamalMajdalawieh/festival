@@ -26,3 +26,4 @@ Route::get('event/cinema', [App\Http\Controllers\EventController::class, 'cinema
 Route::get('event/shows', [App\Http\Controllers\EventController::class, 'shows'])->name('show');
 Route::get('event/lecture', [App\Http\Controllers\EventController::class, 'lecture'])->name('lecture');
 Route::get('event/workshop', [App\Http\Controllers\EventController::class, 'workshop'])->name('workshop');
+Route::get('event/article', [App\Http\Controllers\EventController::class, 'article'])->name('article');

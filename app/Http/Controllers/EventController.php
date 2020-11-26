@@ -30,4 +30,8 @@ class EventController extends Controller
     public function workshop(){
         return view('event.workshop');
     }
+
+    public function article(){
+        return view('event.articleSection');
+    }
 }
